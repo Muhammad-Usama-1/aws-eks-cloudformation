@@ -34,6 +34,12 @@ aws cloudformation create-stack \
   --template-body file://eks_with_vpc.yaml
 ```
 
+Or we can also do it with the console of Cloudformation
+
+![image](https://github.com/Muhammad-Usama-1/aws-eks-cloudformation/assets/66507968/b2081b87-bd6c-491e-8ecb-43556887fb0b)
+
+
+
 ### Parameters
 
 The template supports the following parameters:
@@ -49,7 +55,7 @@ The VPC setup is handled by a separate CloudFormation template (`vpc.yml`) refer
 
 ### Permissions
 
-Ensure that the AWS IAM user/role executing this CloudFormation template has permissions to create the required resources (EKS cluster, IAM roles, networking resources).
+Ensure that the AWS IAM user/role executing this CloudFormation template has permission to create the required resources (EKS cluster, IAM roles, networking resources).
 
 ### Contributions
 
