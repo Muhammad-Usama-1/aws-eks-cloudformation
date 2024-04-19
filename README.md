@@ -1,6 +1,6 @@
 ### Amazon EKS Cluster with VPC CloudFormation Template
 
-This repository contains an AWS CloudFormation template (``) to deploy an Amazon EKS (Elastic Kubernetes Service) cluster along with a VPC (Virtual Private Cloud) using nested stacks.
+This repository contains an AWS CloudFormation template (`eks_with_vpc.yaml`) to deploy an Amazon EKS (Elastic Kubernetes Service) cluster along with a VPC (Virtual Private Cloud) using nested stacks.
 
 ### Description
 
@@ -25,15 +25,14 @@ To deploy this CloudFormation template, follow these steps:
 2. **Deploy the Stack**:
    Use the AWS CloudFormation CLI or AWS Management Console to deploy the `eks_with_vpc.yaml` template. Ensure you have the necessary IAM permissions.
 
-   Example CLI command:
-   ```
+Example CLI command:
+```
 aws cloudformation create-stack \
   --region REGION \
   --stack-name my-eks-cluster \
   --capabilities CAPABILITY_NAMED_IAM \
   --template-body file://eks_with_vpc.yaml
-  
-  ```
+```
 
 ### Parameters
 
