@@ -19,7 +19,7 @@ To deploy this CloudFormation template, follow these steps:
 
 1. **Clone the Repository**:
    ```
-   git clone https://github.com/yourusername/eks-cluster-cloudformation.git
+   git clone https://github.com/Muhammad-Usama-1/aws-eks-cloudformation
    cd eks-cluster-cloudformation
    ```
 Note: The VPC configuration is handled by a nested CloudFormation stack (`VpcStack`),  so VPC.yaml file should be placed in an S3 for example (`https://BUCKETNAME-REGION.s3.amazonaws.com/2-vpc.yml`)
